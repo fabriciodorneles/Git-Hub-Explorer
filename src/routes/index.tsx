@@ -12,7 +12,7 @@ const Routes: React.FC = () => (
     // Porque o react-dom executa tudo por default
     <Switch>
         <Route path="/" exact component={Dashboard} />
-        <Route path="/repository" component={Repository} />
+        <Route path="/repositories/:repository+" component={Repository} />
     </Switch>
 );
 
